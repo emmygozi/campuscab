@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+
+input {
+ background:url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login.png') no-repeat 5px 5px #484B4F;
+  width: 100px;
+  cursor:pointer;
+  border-radius:50px;
+  padding:10px 20px 10px 0;
+  color:White;
+  font-size:14px;
+  text-align:left;
+  text-indent:40px;
+  display:block;
+  margin:0 auto;
+ 
+  /* Animations: */
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-property: all;
+  
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-duration: .4s;
+  -moz-transition-property: all;
+}
+
+input:hover {
+  background-image: url('https://dh3vbjnk0bnfa.cloudfront.net/static/centralauth/images/btn-login-hover.png');
+  background-position: 65px 5px;
+  text-indent: 20px;  
+}
+
+
+	
+	.wrap {
+  background-color:#f6f6f6;
+  width:450px;
+  margin: 0 auto;
+  padding:10px;
+  height:260px;
+  
+  p {
+    font-family:Helvetica, sans-serif;
+    text-align:center;
+  }
+}
+
+
+.twat {
+  float:right;
+  font-family:Helvetica, sans-serif;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="wrap">
+  <p>Simple login button insprired by <a href="https://auth.giantbomb.com/login" target="_blank">GiantBomb's login button.</a></p>
+  
+  <input type="button" value="Log In" class="login signin" />
+  
+  <p>This works by using CSS3 transitions. Basically on the <code>:hover</code> pseudo-selector you need to change:</p>
+  
+  <ul>
+    <ol>The background image.</ol>
+    <ol>The background position.</ol>
+    <ol>The text-indent to reposition the text.</ol>
+  </ul>
+  
+  <a class="twat" title="My twitter" href="https://www.twitter.com/lostinthegc">@lostinthegc</a>
+</div>
+
+</body>
+</html>

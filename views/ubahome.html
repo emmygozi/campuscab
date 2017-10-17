@@ -1,0 +1,158 @@
+
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="flipimages.css" type="text/css">
+
+	<script type="text/javascript" src="boots/js/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript" src="boots/js/bootstrap.js"></script>
+
+	<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body class="container">
+
+	<div class="row">  <!-- you can further name bootstrap classes for specific functions -->
+		<div class="row" >
+			<div class="col-md-12"  >
+				<div id="changehome" style="height: 11em; background-color: #B80000;">
+					<img class="col-sm-5" id="changer" src="images/guy.jpg" height="150em;" 
+					style="float: left;" >
+					<div class="col-md-1" style="display: inline-block;vertical-align: 
+					bottom; margin-top: 13%;">
+					<button id="sup" class="btn btn-outline-info btn-sm" style="" >Hide Heading</button>
+				</div>
+				<img class="col-sm-5" id="changer2" src="images/ubacards.jpg" height="150em;"
+				style="float: right;">	<br>
+				
+			</div><br>
+			
+
+		</div>
+		<div class="row">
+			<div class="col-md-8">
+				<h2>  Please Register Below To Use UBACAMPUS</h2>
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+					<strong style="font-size: small;">Important Notice</strong> 
+					<span style="font-size: small;">By creating an account you agree to our <a href="#">Terms & Conditions</a>.</span>
+
+				</div>
+
+				<!--Form start -->
+
+				<form action="/index.html" method="post" >
+					<div class="form-group">
+						<label><b>Email</b></label>
+						<input type="text" class="form-control" id="mail" placeholder="Enter Email" name="email" required>
+					</div>
+
+
+					<div class="row">
+						
+						
+						<div class="col-md-4">
+							<label><b>Choose Campus</b></label>
+							<select class="form-control" name="university">
+								<option value="">Campus..</option>
+								<option value="1">ABU - Ahmadu Bello University Zaria</option>
+								<option value="2">FUTA - Federal University of Technology Akure</option>
+								<option value="3">FUNNAB - Federal University of Agriculture
+								</option>
+								<option value="4">UNIABUJA - Abuja University Gwagalada
+								</option>
+								<option value="5">UNIBEN - University of Benin</option>
+								<option value="6">UI - University of Ibadan</option>
+								<option value="7">UNILAG - University of Lagos</option>
+								
+							</select>&nbsp; 
+						</div>
+
+						<div class="col-md-4">
+							<label><b>Faculty</b></label>
+							<select class="form-control" name="faculty">
+								<option>faculty..</option>
+							</select>
+						</div>
+						
+						<div class="col-md-4">
+							<label><b>Department</b></label>
+							<select class="form-control" name="department">
+								<option>department..</option>
+							</select>
+						</div>
+						
+
+						
+					</div>
+
+					
+					<div class="form-group">
+						<label><b>Gender</b></label><br>
+						<input type="radio" name="gender" value="male"> Male<br>
+						<input type="radio" name="gender" value="female"> Female<br>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" name="send"   class="btn btn-success">Submit
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4">
+
+				<div class="circle">
+					<div class="front">
+						<img width="300" height="300" src="images/mobilebanking.jpg">
+					</div>
+					<div class="back">
+
+						<img width="300" height="300" src="images/baner-students.jpg">
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".circle").hover(function(){
+     // if mouse hover then add .flipping class
+     $(this).addClass("flipping");
+
+ },function(){
+    // if mouse unhover then remove the .flipping class
+    $(this).removeClass("flipping");
+});
+
+		$(function() {
+			$('#sup').click(function() {
+                // $('#text').hide('slow');
+                $('#changehome').slideUp('slow')
+            });
+			$('#sdown').click(function() {
+				$('#changehome').slideDown('slow')
+			});
+		});
+
+
+	});        
+</script>
+
+
+</html>
